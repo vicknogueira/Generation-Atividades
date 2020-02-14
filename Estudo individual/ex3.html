@@ -1,0 +1,18 @@
+<script>
+    var num1, num2, soma, mult, subtr, divi;
+
+    num1 = parseInt(prompt("Informe um número: "));
+    num2 = parseInt(prompt("Informe outro número: "));
+
+    soma = num1 + num2;
+    mult = num1 * num2;
+    divi = num1 / num2;
+
+    if(num1 > num2){
+        subtr = num1 - num2;
+    }else{
+        subtr = num2 - num1;
+    }
+    document.write(`<br>A soma entre ${num1} e ${num2} é ${soma}<br>A subtração entre ${num1} e ${num2} é ${subtr}<br>A multiplicação entre ${num1} e ${num2} é ${mult}<br>A divisão entre ${num1} e ${num2} é ${divi}`)
+
+</script>
