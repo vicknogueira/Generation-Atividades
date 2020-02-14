@@ -1,0 +1,15 @@
+<script>
+    var nome, salario, newSalario;
+    
+    nome = prompt("Digite seu nome: ");
+    salario = parseFloat(prompt("Informe seu salário: "));
+
+    if(salario >= 5000){
+        newSalario = (salario * 0.05) + salario
+        alert(nome, " seu salario era R$", salario, " e com o aumento de 5% fica R$", newSalario);
+    }else{
+        newSalario = (salario * 0.10) + salario
+        alert(nome + " seu salario era R$" + salario + " e com o aumento de 10% fica R$" + newSalario);
+    }
+    // concatenação no js só funciona com "+"
+</script>

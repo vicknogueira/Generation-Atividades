@@ -1,0 +1,24 @@
+<script>
+    var nome, resultado, ano_nasc, ano_adm, idade, admissao;
+
+    nome = prompt("Nome do empregado: ");
+    codigo = prompt("Código do empregado: ");
+    ano_nasc = parseInt(prompt("Ano de nascimento: "));
+    ano_adm = parseInt(prompt("Ano de admissão: "));
+    parseInt(idade, admissao);
+    idade = 2020 - ano_nasc;
+    admissao = 2020 - ano_adm;
+
+    if(idade >= 65){
+        resultado = "Requerer"
+    }
+    else if(idade >= 60 && admissao >= 25){
+        resultado = "Requer aposentadoria"
+    }
+    else if(admissao >= 30){
+        resultado = "Requer aposentadoria"
+    }else{
+        resultado = "Não requer aposentadoria"
+    }
+    alert("----------------------------------------\n" + nome + "\nVocê tem " + idade + " anos e trabalhou " + admissao + " anos portanto \n" + resultado + "\n----------------------------------------")
+</script>

@@ -1,0 +1,18 @@
+<script>
+    var salario = 0.0, media, totalSalario = cont = 0; // Inicialização
+	parseFloat(totalSalario);
+
+		while(cont <= 5){
+			
+			salario = parseFloat(prompt("Informe o seu salario: R$"));
+			totalSalario += salario;
+			cont++;
+			
+		}
+		if(cont > 0 && cont != 1){
+			media = totalSalario/cont;
+		}else{
+			alert("Não é possível dividir")
+		}
+		document.write("<br>A soma dos salarios dão: R$" + totalSalario + "<br><br>A média dos salários dão: R$" + media);
+</script>

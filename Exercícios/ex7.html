@@ -1,0 +1,28 @@
+<script>
+
+    var nome, resultado, nota1, nota2, nota3, media
+    //Integer = Inteiro
+    // ================== Input =========================
+
+    nome = prompt("Informe seu nome: ");
+    nota1 = parseFloat(prompt("Informe sua 1ª nota: ")); // Convertendo para real
+    nota2 = parseFloat(prompt("Informe sua 2ª nota: ")); // Convertendo para real
+    nota3 = parseFloat(prompt("Informe sua 3ª nota: ")); // Convertendo para real
+
+    // ============= Processamento =====================
+
+    media = (nota1 + nota2 + nota3)/3;
+     // Arredonda para 1 casa após a vírgula
+     media = media.toFixed(1);
+    // ================= Output ==========================
+
+    if( media >= 5){
+        resultado = "Aprovado(x) !";
+    }else{
+        resultado = "Reprovado(x) !";
+    }
+    alert(resultado + "\n" + nome + " sua média é " + media); // Exibe na tela o resultado
+    
+    // Fim da saída
+
+</script>

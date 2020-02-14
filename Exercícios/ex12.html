@@ -1,0 +1,48 @@
+<script>
+    // -----------------------Receber 2 números e colocar em ordem crescente----------------------------------
+    // var n1, n2
+
+    // n1 = parseInt(prompt("Digite um número: "));
+    // n2 = parseInt(prompt("Digite outro número: "));
+    // if(n1 < n2){
+    //     alert("-----------------\n" + n1 + "º <---- First\n" + n2 + "\n-----------------\n")
+    // }
+    // else{
+    //     alert("-----------------\n" + n2 + "º <---- First\n" + n1 + "\n-----------------\n")
+    // }
+
+
+    // --------------------------Receber 3 números e falar qual é o maior--------------------------------------
+    var n1, n2, n3, maior
+
+
+    n1 = parseInt(prompt("Digite um número: "));
+    n2 = parseInt(prompt("Digite um número: "));
+    n3 = parseInt(prompt("Digite um número: "));
+
+    if(n1 < n2 && n2 < n3){
+        maior = n3
+    }
+    else if(n1 < n2 && n2 > n3){
+            maior =  n2
+        }
+    else{
+            maior = n1
+        }
+	
+    alert("O maior número entre " + n1 + ", " + n2 + " e " + n3 + " é o número " + maior)
+
+    // -----------------------receber 5 números, calcular e imprimir a média----------------------------------
+    // var n1, n2, n3, n4, n5, media
+
+    // n1 = parseInt(prompt("Escreva o 1ª número: "));
+    // n2 = parseInt(prompt("Escreva o 2ª número: "));
+    // n3 = parseInt(prompt("Escreva o 3ª número: "));
+    // n4 = parseInt(prompt("Escreva o 4ª número: "));
+    // n5 = parseInt(prompt("Escreva o 5ª número: "));
+
+
+    // media = (n1 + n2 + n3 + n4 + n5) / 5
+
+    // alert("\nA média entre todos esses números é " + media + "\n")
+</script>

@@ -1,0 +1,28 @@
+<script>
+    // Criar 3 vetores com 5 posições, respectivamente chamados a, b, c
+    // Cadastrar números no vetor a
+    // O vetor b será o vetor a * 2
+    // O vetor c será o a + b
+    // Imprimir o 3 vetores
+    var a = [];
+    var b = [];
+    var c = [];
+    document.write("<br>----------------------------------------<br>Os números no vetor 'a' são: ")
+    for(var i = 0; i < 5; i++){
+        a[i] = parseInt(prompt("Informe o primeiro número: "));
+        b[i] = a[i] * 2;
+        c[i] = a[i] + b[i];
+    }
+    for(var i = 0; i < 5; i++){
+        document.write("<br><br>- ", a[i]);
+    }
+    document.write("<br>---------------------------------------<br>O dobro de 'a' é: ")
+    for(var i = 0; i < 5; i++){
+        document.write("<br><br>- ", b[i]);
+    }
+    document.write("<br>---------------------------------------<br>A soma de 'a' + 'b' no vetor 'c' são: ")
+    for(var i = 0; i < 5; i++){
+        document.write("<br><br>- ", a[i], " + ", b[i], " = ", c[i]);
+    }
+
+</script>

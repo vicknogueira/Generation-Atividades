@@ -1,0 +1,15 @@
+<script>
+    // Criar um vetor que  5 posições, imprimir na ordem que foi digitado e depois inverter
+    // Popular um vetor é colocar informações dentro dele
+    var numeros = [];
+    document.write("Ordem que você digitou: <br>")
+    for (var i = 0; i < 5; i++) {
+        numeros[i] = prompt("Informe um número: ");
+        document.write("- ", numeros[i], "<br>");// para apresentar na tela os números digitados é importante informar os índices
+    }
+    document.write("<br>Ordem inversa: <br>")
+    for(var i = 4; i >= 0; i--){
+        document.write("<br>","- ", numeros[i]);
+    }
+
+</script>
