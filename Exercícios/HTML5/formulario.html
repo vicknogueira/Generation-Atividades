@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Comportamento é dentro de head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation - Formulário</title>
+    <link rel="icon" href="assets/img/jurassic.png">
+    <link rel="stylesheet" href="assets/css/estiloFormulario.css">
+</head>
+
+<body>
+        <br><br>
+        <h1>Formulário</h1><br><br>
+        <div id="caixa">
+        <form action="#" method="POST">
+            <label for="">Nome:</label> <!-- Um rótulo/ etiqueta-->
+            <input type="text" name="nome" id="" maxlength="50" size="40" placeholder="Digite seu nome..." required><br><br>
+            <!-- size determin a largura do input-->
+            <label for="">Idade:</label>
+            <input type="number" name="" id="" min="18" max="29" placeholder="Idade..." required><br><br>
+            <label for="">Nascimento:</label>
+            <input type="date" name="nascimento" placeholder="Digite sua data de nascimento..." id="" required>
+            <select name="estados" id="estado" required>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="CE">Ceará</option>
+            </select><br><br>
+            <label for="">Senha:</label>
+            <input type="password" name="senha" id="" placeholder="Digite sua senha..." required><br><br>
+            <label for="">Sexo:</label> 
+            <input type="radio" name="sexo"class="radiocheck1" value="Masculino" required>
+            <label for="sexo">Masculino</label><!-- O for serve para designar para qual input ele esta destinado neste caso o sexo por causa do name="sexo dos inputs"-->
+            <input type="radio" name="sexo" class="radiocheck1" value="Feminino" required>
+            <label for="sexo">Feminino</label><br><br>
+            <label for="almoco">Almoço</label>
+            <input type="checkbox" name="almoco" class="radiocheck1" id="" required>
+            <label for="almoco">Vale transporte</label>
+            <input type="checkbox" name="almoco" class="radiocheck1" id="" required><br><br>
+            <label for="" class="tituloObs">Observação:</label><br>
+            <textarea name="" id="" cols="80" rows="10" maxlength="200"></textarea><br><br>
+            <!-- Colocando o resize="none" não terá como redimensionar a caixa-->
+            <input class="botao1" type="submit" value="Enviar">
+            <input class="botao2" type="reset" value="Excluir">
+        </form>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+aside{
+    background-color: #01d8da;
+    width: 400px;
+    height: 1500px;
+}
+nav{
+    background-color: #008c8d;
+    width: 800px;
+    height: 250px;
+}
+article{
+    background-color: #0000b0;
+    width: 800px;
+    height: 150px;
+}
+section{
+    background-color: #008c02;
+    width: 340px;
+    height: 285px;
+}
+#caixa{
+    width: 800px;
+    height: 2170px;
+    margin: 0 auto;
+}

@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+header{
+    background-color: #444444;
+    width: 1500px;
+    height: 520px;
+    padding: 16%;
+}
+nav{
+    background-color: #dedfcf;
+    width: 1500px;
+    height: 120px;
+}
+article{
+    width: 750px;
+    height: 950px;
+    float: left;
+    padding: 20%;
+}
+section{
+    background-color: #898a7a;
+    width: 1500px;
+    height: 900px;
+    clear: both;
+    padding: 30%;
+}
+div{
+    width: 375px;
+    height: 375px;
+}
+footer{
+    width: 1500px;
+    height: 100px;
+    clear: both;
+    color: black;
+    padding: 7%;
+}
+.div1{
+    background-color:  #a9a8b6;
+    float: left;
+    padding: 10%;
+}
+.div2{
+    background-color: #9897a5;
+    float: left;
+    padding: 10%;
+}
+#caixa{
+    width: 1500px;
+    height: 2985px;
+    margin: 0 auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation - Ex6</title>
+    <link rel="icon" href="assets/img/darth.png">
+
+    <style>
+        /* organizar os seletores dos mais amplos para os mais específicos */
+        section{/* Amplo*/
+            width: 500px;
+            height: 200px;
+            float: left; /* Para fazer um bloco um elemento ir/flutuar para o lado*/
+        }
+        article{/* amplo */
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            clear: both; /* Limpa a flutuação de mbos os lados, mas pode ser left ou right  */
+        }
+        #sec1{ /* específico */
+            background-color: cadetblue;
+        }
+        #sec2{/* específico */
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="sec1"></section>
+    <section id="sec2"></section>
+    <article></article>
+</body>
+
+</html>

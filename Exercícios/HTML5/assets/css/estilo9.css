@@ -1,0 +1,53 @@
+*{ /* seletor universal */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+header{
+    background-color: #999;
+    width: 1200px;
+    height: 185px;
+    padding: 7%;
+}
+nav{
+    width: 1200px;
+    height: 70px;
+    padding: 2%;
+    color: black;
+}
+aside{
+    background-color: #787969;
+    width: 150px;
+    height: 1000px;
+    float: left;
+}
+section{
+    width: 450px;
+    height: 500px;
+    float: left;
+}
+div{
+    width: 600px;
+    height: 200px;
+}
+footer{
+    width: 1200px;
+    height: 100px;
+    clear: both;
+    padding: 7%;
+    color: black;
+}
+.div1{
+    float: left;
+}
+.aside2{
+    float: right;
+}
+#caixa{
+    width: 1200px;
+    height: 1455px;
+    margin: 0 auto;
+}
