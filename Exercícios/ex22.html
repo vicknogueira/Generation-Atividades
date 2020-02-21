@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    var a = [];
+    var b = [];
+    var c = [];
+
+    for (var i = 0; i <= 2; i++) {
+        a[i] = parseInt(prompt("Digite um número"));
+        b[i] = a[i] * 2;
+        c[i] = a[i] + b[i];
+    }
+    document.write("Os números que você digitou para o vetor 'a' foi:<br><br>")
+    for (var i = 0; i <= 2; i++) {
+        document.write(`<ul><li> O dobro de ${a[i]} = ${b[i]}</li></ul>`);
+    }
+    // document.write("O dobro de 'a' é:");
+    // for (var i = 0; i <= 2; i++) {
+    //     document.write(`<ul><li> ${b[i]}</li></ul>`);
+    // }
+    document.write(`A soma de 'a + b' é:`)
+    for (var i = 0; i <= 2; i++) {
+        document.write(`<ul><li> ${b[i]} + ${a[i]} = ${c[i]}</li></ul>`);
+    }
+</script>
