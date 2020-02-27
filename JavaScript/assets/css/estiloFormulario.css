@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url(../img/papel.jpeg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    border: 0;
+    padding: 52px;
+    border-radius: 4px;
+    background-color: #52515187;
+}
+label{
+    font-size: medium;
+    font-size: 17px;
+}
+input{
+    height: 34px;
+    border-radius: 2px;
+    border: 0;
+    padding-left: 10px;
+}
+textarea{
+    border-radius: 2px;
+    border: 1px solid #8080803d;
+}
+.botao1{
+    padding: 0;
+    cursor: pointer;
+    margin-left: 116px;
+    width: 72px;
+    background-color: green;
+    font-family: sans-serif;
+}
+.botao2{
+    cursor: pointer;
+    padding: 0;
+    margin-left: 116px;
+    width: 72px;
+    background-color: #bf3333;
+    color: white;
+    font-family: sans-serif;
+}
+.radiocheck1{
+    height: 13px;
+    border-radius: 2px;
+    border: 1px solid #8080803d;
+}
+.beneficios{
+    height: 13px;
+}
+#estado{
+    border: 0;
+    width: 232px;
+    height: 34px;
+}
+#caixa{
+    border: 0;
+    width: 605px;
+    height: 650px;
+    margin: 0 auto;
+}
