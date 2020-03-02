@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em fila</title>
+</head>
+<body>
+    <script>
+        function funcao1(){
+            funcao2()
+            console.log("Função 1");
+        }
+        function funcao2(){
+            funcao3()
+            console.log("Função 2");
+        }
+        function funcao3(){
+            console.log("Função 3");
+        }
+        funcao1()
+    </script>
+</body>
+</html>

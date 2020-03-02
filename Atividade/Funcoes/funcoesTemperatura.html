@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções -  Temperatura</title>
+</head>
+<body>
+    <script>
+        function paraCelsius(fahrenheit){
+            var tf = (fahrenheit * 9 - 160)/5
+            return tf
+        }
+        function paraFahrenheit(celsius){
+            var tc = (celsius * 9 + 160)/5
+            return tc
+        }
+        var temperatura = parseInt(prompt("Digite a temperatura: "));
+        var resultado = paraCelsius(temperatura);
+        var resultado2 = paraFahrenheit(temperatura);
+        alert(`${temperatura}°F convertido para Celsius: ${resultado}°C`)
+        alert(`${temperatura}°C convertido para Fahrenheit${resultado2}°F`)
+    </script>
+</body>
+</html>

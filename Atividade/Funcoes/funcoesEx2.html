@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Exercício 2</title>
+</head>
+<body>
+    <script>
+        try{
+            function nota(n1, n2, n3, n4, n5){
+                var media4 = (n1 + n2 + n3 + n4)/4;
+                var media5 = (n1 + n2 + n3 + n4 + n5)/5;
+                // retornando o vetor com os resultados
+                var nota = [media4, media5];
+                return nota//  para retornar any e reconhecer as variaveis da function
+            }
+            var n1 = parseInt(prompt("Digite a nota 1:"));
+            var n2 = parseInt(prompt("Digite a nota 2:"));
+            var n3 = parseInt(prompt("Digite a nota 3:"));
+            var n4 = parseInt(prompt("Digite a nota 4:"));
+            var n5 = parseInt(prompt("Digite a nota 5:"));
+            var media4 = nota(n1, n2, n3, n4)[0];// [0] pegando o índice doa media4 dentro de function
+            var media5 = nota(n1, n2, n3, n4, n5)[1];// [1] mesma coisa
+            alert(`Média com 4 notas: ${media4}\nMédia com 5 notas: ${media5}`)
+        }catch(erro){
+            alert(`Deu ruim !\nInforme o código de erro\n${erro}`)
+        }
+    </script>
+</body>
+</html>

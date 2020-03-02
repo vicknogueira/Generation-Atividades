@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        // ___________________ Forma trabalhosa __________________________
+        /*var lado1 = 5;
+        var lado2 = 3;
+        var lado3 = 1;
+        // Calculo da media dos lados
+        var soma = (lado1 + lado2 + lado3)/3;
+        var lado4 = 6;
+        var lado5 = 7;
+        var lado6 = 2;
+        // Calculo da media dos lados
+        var soma2 = (lado4 + lado5 + lado6)/3;
+        alert(`A area é = ${soma}`)
+        alert(`A area é = ${soma2}`)*/
+        // _______________ Forma inteligente ____________________________
+        function calculaMedia(a, b, c){
+            var soma = (a + b + c)/3
+            return soma
+        }
+        // Colocando um prompt de entrada para receber do usuário.
+        var n1 = parseInt(prompt("Digite o 1º número: "));
+        var n2 = parseInt(prompt("Digite o 2º número: "));
+        var n3 = parseInt(prompt("Digite o 3º número: "));
+        // Invocando a função e enviando os argumentos(parâmetros).
+        var resultado = calculaMedia(n1, n2, n3);// retornar 'any' e antes sem o return retornava 'void'
+        alert(`Resultado = ${resultado}`);
+    </script>
+</body>
+</html>
