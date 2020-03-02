@@ -24,6 +24,30 @@ section{
     padding-left: 12px;
     padding-top: 1px;
 }
+button{
+    cursor: pointer;
+    width: 13em;
+    height: 3em;
+    background-color: #805f00;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    margin-left: 31%;
+    cursor: pointer;
+}
+.botao7{
+    width: 13em;
+    height: 3em;
+    background-color: #805f00;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    margin-left: 31%;
+    cursor: pointer;
+}
+#digitado7{
+    height: 50px;
+}
 #caixa{
     margin: 0 auto;
     width: 34em;
