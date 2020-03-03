@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - exercício 6</title>
+    <style>
+        li {
+            position: relative;
+            display: block;
+            padding: .75rem 1.25rem;
+            background-color: #eaf18b !important;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-top: 0;
+            font-family: 'Amatic SC', cursive;
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+        }
+        .corbotao{
+            background-color: #bf4848 !important;
+        }
+        .corbotao1{
+            background-color: #17a52f !important;
+        }
+        #boxbotao {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #caixa {
+            margin: 0 auto;
+            width: 31%;
+            margin-top: 2em;
+        }
+    </style>
+   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="caixa">
+        <h1>Adicione coisas na sua lista</h1><br><br>
+        <div id="items">
+            <ul class="list-group" id="grupo">
+                <li class="list-group-item item">- item 1</li>
+                <li class="list-group-item item">- item 2</li>
+            </ul>
+        </div><br><br>
+        <div id="boxbotao">
+            <button onclick="adicionar()" type="button" class="btn btn-secondary corbotao1" data-toggle="tooltip"
+                data-placement="bottom" title="Clique para adicionar">Adicionar</button>
+            <button onclick="remover()" type="button" class="btn btn-secondary corbotao" data-toggle="tooltip"
+                data-placement="bottom" title="Clique para remover">Remover</button>
+        </div>
+
+    </section>
+
+    <script>
+        function adicionar() {
+            var ul = document.querySelector(".list-group");
+            var li = document.createElement("li")// Cria um novo elemento
+            li.className = prompt("Escreva algo:"); // adiciona um nome pra ele por meio de prompt, mas pode ser tb como um nomepré definido
+            li.appendChild(document.createTextNode("- " + li.className)); // 
+            ul.appendChild(li); // junta esse novo elemento li com os li do ul
+        }
+        function remover() {
+            var ul = document.getElementById("grupo");
+            ul.innerHTML = ""; //ira apagra a string
+            ul.length = 0; // ira apagar
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
