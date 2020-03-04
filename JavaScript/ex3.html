@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - lógica</title> <!-- 04/04/2020 Wednesday -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .inputs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #caixa {
+            margin: 0 auto;
+            width: 37%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caixa"><br><br>
+        <h1>Monte sua lista</h1><br><br>
+        <div class="input-group mb-3 inputs">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" id="nome">
+            <input type="button" class="btn btn-outline-secondary" value="Click here!" id="botao">
+        </div>
+        <div class="texto"></div>
+    </div>
+
+    <script>
+        // Fazendo evento usando addEventListener() é a forma mais usada
+        try {
+            var nome;
+            document.getElementById("botao").addEventListener('click', function () {
+                nome = document.getElementById('nome').value;
+                var li = document.createElement('li');
+                var div = document.querySelector('.texto');
+                li.className = nome;
+                li.appendChild(document.createTextNode(`${li.className}`))
+                div.appendChild(li);
+            });
+            //debugger //programa que marca um breakpoint no console - Para encontrar erro
+            // Muda a cor do texto quando passar o mouser
+            document.getElementById('botao').addEventListener('mouseover', function () {
+                document.getElementById('nome').style.color = 'purple';
+            });
+            // Ao tirar o mouser volta a cor inicial
+            document.getElementById('botao').addEventListener('mouseout', function () {
+                document.getElementById('nome').style = 'black';
+            })
+        } catch (erro) {
+            alert(`Deu ruim!\n${erro}`)
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

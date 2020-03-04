@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho com objetos</title>
+</head>
+
+<body>
+    <script>
+        try{
+        // criando o nosso modelo de um objeto
+        // cria o método construtor = constrói o modelo
+        // modelo = conjunto de atributos (características) e métodos (ações)
+        // todo modelo começa com letra maiúscula
+        //método é com letra minúscula
+
+        // o _ é só para diferenciar
+    //Início do método construtor __________________________________
+        function MinhaCaneta(_cor, _tipo, _tamanho, _temTinta, _material, _espessuraPonta, _tampado) { // a cor azul é atribuida ao _cor e _cor é atribuída ao objeto MinhaCaneta
+            //atributos -----------------------------
+            this.cor = _cor // a variável cor recebe o _cor que é azul
+            this.tipo = _tipo
+            this.tamanho = _tamanho
+            this.temTinta = (_temTinta || "sim")
+            this.material = _material
+            this.espessuraPonta = _espessuraPonta
+            this.tampado = (_tampado || "sim")
+            //fim dos atributos ---------------------
+        }
+    //fim do método construtor __________________________________
+        
+    //Início do método abrir ____________________________________
+        MinhaCaneta.prototype.abrir = function () { // prototype usa o protótipo da minha caneta (atributos) -- O método é abrir
+            if (this.tampado == "sim") {
+                this.tampado = "não"; // alterei para não tampada pq agora ela mudou, ela abriu
+                alert("Você tirou a tampa da caneta !");
+            } else {
+                alert("Caneta já estava sem tampa !");
+            }
+        }
+
+        // fim do método abrir _____________________________________
+
+    //Início do método fechar __________________________________
+        MinhaCaneta.prototype.fechar = function (){
+            if(this.tampado == "não"){ 
+                this.tampado = "sim"; // alterei para sim tampada pq agora ela mudou, ela fechou
+                alert("Você tampou a caneta !")
+            }else{
+                alert("A caneta já esta tampada !")
+            }
+        }
+    //Fim do método fechar _____________________________________
+
+
+
+        //Instanciar = cópia do objeto
+        caneta1 = new MinhaCaneta("azul", "esferográfica", "15cm", "", "plástico", "0.5mm", "") // instanciar = cópia do objeto baseado no modelo criado
+        caneta2 = new MinhaCaneta("red", "hidrográfica", "10cm", "", "plástico", "2mm", "")
+
+        //Testando outras funcionalidades ...
+        if (caneta1.cor == caneta2.cor) {
+            alert("As cores são iguais !")
+        } else {
+            alert("As canetas tem cores diferentes !")
+        }
+
+        //Imprimindo os atributos da caneta
+        alert("Esta caneta possui os seguintes atributos:\nCor: " + caneta2.cor + "\nTipo: " + caneta2.tipo + "\nTamanho: " + caneta2.tamanho + "\nTem tinta? " + caneta2.temTinta + "\nMaterial: " + caneta2.material + "\nEspessura da caneta: " + caneta2.espessuraPonta + "Esta tampado: " + caneta2.tampado)
+        alert("Esta caneta possui os seguintes atributos:\nCor: " + caneta1.cor + "\nTipo: " + caneta1.tipo + "\nTamanho: " + caneta1.tamanho + "\nTem tinta? " + caneta1.temTinta + "\nMaterial: " + caneta1.material + "\nEspessura da caneta: " + caneta1.espessuraPonta)
+        
+        //Utilizando o método abrir() com o caneta2
+        caneta2.abrir();
+        caneta2.fechar();
+
+
+        }catch(erro){
+            alert("Há algo errado\nErro:\n" + erro)
+        }
+    </script>
+</body>
+
+</html>

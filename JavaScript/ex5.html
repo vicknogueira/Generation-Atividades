@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Objeto</title>
+</head>
+
+<body>
+    <script>
+        try {
+            function Carro(_marca, _anoFabricacao, _velocidadeMax, _velocidadeAtual) {
+                this.marca = _marca;
+                this.anoFabricacao = _anoFabricacao;
+                this.velocidadeMax = parseInt(_velocidadeMax);
+                this.velocidadeAtual = parseInt(_velocidadeAtual);
+            }
+            Carro.prototype.acelerar = function () {
+                if (this.velocidadeAtual <= this.velocidadeMax) {
+                    for (var i = 0; this.velocidadeAtual <= this.velocidadeMax; i++) {
+                        this.velocidadeAtual += 1
+                        alert(this.velocidadeAtual)
+                    }
+                } else {
+                    alert("Velocidade está no limite")
+                }
+            }
+            Carro.prototype.desacelerar = function () {
+                
+                if (this.velocidadeAtual >= this.velocidadeMax) {
+                    for (var i = this.velocidadeMax; this.velocidadeAtual >= this.velocidadeMax; i++) {
+                        this.velocidadeAtual -= 1
+                        alert(this.velocidadeAtual)
+                    }
+                }else{
+                    alert("Velocidade abaixo da velocidade máxima")
+                }
+            }
+
+            carro1 = new Carro("Honda", "2019", "90", "0");
+            // alert(" A marca é " + carro1.marca)
+
+            carro1.acelerar()
+            carro1.acelerar()
+            carro1.desacelerar()
+            carro1.desacelerar()
+
+
+        } catch (erro) {
+            alert("Há algo errado!" + erro)
+        }
+    </script>
+</body>
+
+</html>
