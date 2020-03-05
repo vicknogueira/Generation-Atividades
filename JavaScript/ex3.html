@@ -93,12 +93,13 @@
                 ul.innerHTML = ''
             })
             document.getElementById('guarda').addEventListener('click', function () {
+                // for(var i = 0; )
                 nome = document.getElementById('nome').value;
                 var ul = document.querySelector('.list-group');
                 var lis = document.querySelector(".list-group-item")
                 var div = document.querySelector("#box")
                 var liclas = document.querySelector('.list-group-item');
-                div.appendChild(document.createTextNode(`${lis}`))
+                div.appendChild(ul)
 
             })
         } catch (erro) {

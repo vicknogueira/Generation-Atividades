@@ -9,12 +9,15 @@ function secTextarea(){
     txtarea.appendChild(document.createTextNode("Deu certooooo"));
     caixa.appendChild(txtarea);
 }
+var criapopup = document.createElement('div');
+var br = document.createElement('br')
+var divpop = document.getElementById('popup');
 function abrePopUp(){
     var data = new Date();
     var hora = data.getHours();
     var min = data.getMinutes();
-    var divpop = document.getElementById('popup');
-    var criapopup = document.createElement('div');
+
+    divpop.appendChild(criapopup)
     var result = '';
     if(hora <= 12){
         result = 'Bom dia';
@@ -30,12 +33,18 @@ function abrePopUp(){
     criapopup.style.backgroundColor = 'green';
     criapopup.style.zIndex = '1000';
     criapopup.style.position = 'fixed';
-    criapopup.style.top = '50%';
-    criapopup.style.left = '40%';
+    criapopup.style.top = '35%';
+    criapopup.style.left = '42%';
     criapopup.style.boxShadow = "0 0 19px 5px grey";
     criapopup.style.backgroundColor = '#e3e489';
     criapopup.style.padding = '10px';
-    criapopup.appendChild(document.createTextNode(`${result}, são exatamente ${hora} horas e ${min} minutos. Esse é um exemplo de popup utilizando o elemento div. Dessa maneira esse pop-up não será bloqueado.`));
+    criapopup.appendChild(document.createTextNode(`${result}, são exatamente ${hora} horas e ${min} minutos.` + br.innerHTML + `Esse é um exemplo de popup utilizando o elemento div. Dessa maneira esse pop-up não será bloqueado.`));
     divpop.appendChild(criapopup);
 
 }
+function fechaPopUp(){
+    criapopup.style = '';
+    criapopup.innerHTML = ''
+
+}   
+

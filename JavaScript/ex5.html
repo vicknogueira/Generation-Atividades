@@ -13,32 +13,46 @@
             function Carro(_marca, _anoFabricacao, _velocidadeMax, _velocidadeAtual) {
                 this.marca = _marca;
                 this.anoFabricacao = _anoFabricacao;
-                this.velocidadeMax = parseInt(_velocidadeMax);
-                this.velocidadeAtual = parseInt(_velocidadeAtual);
+                this.velocidadeMax = _velocidadeMax;
+                this.velocidadeAtual = (0 || _velocidadeAtual)
             }
             Carro.prototype.acelerar = function () {
-                if (this.velocidadeAtual <= this.velocidadeMax) {
-                    for (var i = 0; this.velocidadeAtual <= this.velocidadeMax; i++) {
-                        this.velocidadeAtual += 1
-                        alert(this.velocidadeAtual)
+                // if (this.velocidadeAtual < this.velocidadeMax) {
+                //     this.velocidadeAtual++
+                //     alert("Acelerando: " + this.velocidadeAtual)
+                // } else { 
+                //     alert("Velocidade está no limite")
+                // }
+                if (this.velocidadeAtual < this.velocidadeMax) {
+                    for (var i = 0; this.velocidadeAtual < this.velocidadeMax; i++) {
+                        this.velocidadeAtual++
+                        alert("Acelerando: " + this.velocidadeAtual)
                     }
                 } else {
                     alert("Velocidade está no limite")
                 }
             }
             Carro.prototype.desacelerar = function () {
-                
+
+                // if (this.velocidadeAtual < 1) {
+                //     alert("O carro já esta parado")
+
+                // } else {
+                //     this.velocidadeAtual--
+                //     alert("Desacelerando: " + this.velocidadeAtual)
+                // }
+                debugger
                 if (this.velocidadeAtual >= this.velocidadeMax) {
-                    for (var i = this.velocidadeMax; this.velocidadeAtual >= this.velocidadeMax; i++) {
-                        this.velocidadeAtual -= 1
-                        alert(this.velocidadeAtual)
+                    for (var i = 0; this.velocidadeAtual > 1; i++) {
+                        this.velocidadeAtual--
+                        alert("Desacelerando: " + this.velocidadeAtual)
                     }
-                }else{
-                    alert("Velocidade abaixo da velocidade máxima")
+                } else {
+                    alert("O carro esta parado")
                 }
             }
 
-            carro1 = new Carro("Honda", "2019", "90", "0");
+            carro1 = new Carro("Honda", "2019", 10, "");
             // alert(" A marca é " + carro1.marca)
 
             carro1.acelerar()
