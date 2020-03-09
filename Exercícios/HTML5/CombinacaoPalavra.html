@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combinação de palavras</title>
+</head>
+
+<body>
+    <h1>Combinação de palavra de várias formas</h1>
+    <script>
+        var palavra = prompt("Digite uma palavra com apenas 3 letras");
+        document.write("A palavra é " + palavra)
+        var vetor = palavra.split("");
+        var resultado = '';
+        if(palavra.length <= 3){
+            for (var i = 0; i < vetor.length; i++) {
+                for (var j = 0; j < vetor.length; j++) {
+                    for (var k = 0; k < vetor.length; k++) {
+                        if (i != j && i != k && j != k) {
+                            resultado = (vetor[i] + vetor[j] + vetor[k]);
+                            document.write("- " + resultado + `<br>`);
+                        }
+                    }
+                }
+            }
+        }else{
+            alert("Esta palavra possui mais que 3 letras !!!")
+        }
+        
+    </script>
+</body>
+
+</html>

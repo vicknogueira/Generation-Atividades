@@ -16,21 +16,22 @@ h2{
     color: #8c4ff3;
 }
 aside{
-    width: 12%;
+    width: 192px;
     float: left;
     margin-left: 18px;
 }   
 main{
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 @media(max-width: 600px){
     body{
         background-color: #1e90ff;
     }
     img{
-        width: 0;
-        height: 0;
+        display: none;
     }
     h1, h2{
         color: white!important;
@@ -49,6 +50,10 @@ main{
     }
     main{
         display: block;
+    }
+    #container-fluid{
+        transition: 2s;
+        transform: rotateY(360deg);
     }
     .asideroxo{
         background-color: #8c4ff3;
@@ -78,6 +83,10 @@ main{
         width: 16%;
     }
 } */
+img:hover{
+    transition: 2s;
+    transform: rotate(360deg);
+}
 .titulo{
     text-align: center;
     margin-top: 55px;
@@ -85,7 +94,8 @@ main{
     color: #8c4ff3;
 }
 .asides{
-    width: 39%;
+    width: 50%;
+    display: contents;
 }
 .imgleft{
     float: right;
